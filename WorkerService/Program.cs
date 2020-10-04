@@ -20,7 +20,6 @@ namespace WorkerService
             .WriteTo.File(@"C:\Users\Berrkha\Documents\ECU - material\Uppgift1\log\LogFile.txt")
             .CreateLogger();
 
-
             try
             {
                 Log.Information("Starting WorkerService...");
@@ -46,6 +45,5 @@ namespace WorkerService
                 {
                     services.AddHostedService<Worker>();
                 });
-
     }
 }
